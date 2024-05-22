@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Openize.Slides.Examples</name>
+    </assembly>
+    <members>
+        <member name="T:Openize.Slides.Examples.ImageExamples">
+            <summary>
+            Provides C# code examples for creating, reading, and modifying Presentation images
+            using the <a href="https://www.nuget.org/packages/Openize.Slides">Openize.Slides</a> library.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.ImageExamples.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Openize.Slides.Examples.ImageExamples"/> class.
+            Prepares the directory 'Presentations/Image' for storing or loading PowerPoint(PPT or PPTX) presentations
+            at the root of the project.
+            If the directory doesn't exist, it is created. If it already exists,
+            existing files are deleted, and the directory is cleaned up.
+            Prepares the directory 'Presentations/Existing/Images' to store images to be added
+            to the presentations.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.ImageExamples.AddImageInASlide(System.String,System.String,System.String)">
+            <summary>
+            This method adds up an image in a slide
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+            <param name="imagename">Picture or image name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.ImageExamples.UpdateImageInExistingSlide(System.String,System.String,System.Double,System.Double)">
+            <summary>
+            This method updates the existing image of a slide
+            </summary>
+            <param name="documentDirectory">Path of presentation folder</param>
+            <param name="filename">Presentation name</param>
+            <param name="xAxis">xAxis value in double</param>
+            <param name="yAxis">xAxis value in double</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.ImageExamples.RemoveImageInExistingSlide(System.String,System.String)">
+            <summary>
+            This method removes the image from presentation
+            </summary>
+            <param name="documentDirectory">Path of presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="T:Openize.Slides.Examples.SlideExamples">
+            <summary>
+            Provides C# code examples for creating, reading, and modifying slides in a Presentation
+            using the <a href="https://www.nuget.org/packages/Openize.Slides">Openize.Slides</a> library.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.SlideExamples.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Openize.Slides.Examples.SlideExamples"/> class.
+            Prepares the directory 'Presentations/New' for storing or loading PowerPoint(PPT or PPTX) presentations
+            at the root of the project.
+            If the directory doesn't exist, it is created. If it already exists,
+            existing files are deleted, and the directory is cleaned up.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.SlideExamples.CreateNewSlideInNewPresentation(System.String,System.String)">
+            <summary>
+            This method create slides in a new presentation
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.SlideExamples.CreateNewSlideInExistingPresentation(System.String,System.String)">
+            <summary>
+            This method creates new slide in an existing presentation
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.SlideExamples.RemoveSlideInAnExistingPresentation(System.String,System.String)">
+            <summary>
+            This method removes slide in an existing presentation
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="T:Openize.Slides.Examples.StyledListExamples">
+            <summary>
+            Provides C# code examples for creating, reading, and modifying slides in a Presentation
+            using the <a href="https://www.nuget.org/packages/Openize.Slides">Openize.Slides</a> library.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.StyledListExamples.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Openize.Slides.Examples.StyledListExamples"/> class.
+            Prepares the directory 'Presentations/New' for storing or loading PowerPoint(PPT or PPTX) presentations
+            at the root of the project.
+            If the directory doesn't exist, it is created. If it already exists,
+            existing files are deleted, and the directory is cleaned up.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.StyledListExamples.CreateBulletedListInASlide(System.String,System.String)">
+            <summary>
+            This method creates bulleted list in a slide
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.StyledListExamples.CreateNumberedListInASlide(System.String,System.String)">
+            <summary>
+            This method creates numbered list in a slide
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.StyledListExamples.AddListItemsInAnExistingList(System.String,System.String)">
+            <summary>
+            This method adds the list items in an existing numbered or bulleted list.
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.StyledListExamples.RemoveListItemsInAnExistingList(System.String,System.String)">
+            <summary>
+            This method removes the list items in an existing numbered or bulleted list.
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="T:Openize.Slides.Examples.TableExamples">
+            <summary>
+            Provides examples for creating tables in PowerPoint presentations.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.TableExamples.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Openize.Slides.Examples.TableExamples"/> class.
+            Prepares the directory 'Presentations/New' for storing or loading PowerPoint(PPT or PPTX) presentations
+            at the root of the project.
+            If the directory doesn't exist, it is created. If it already exists,
+            existing files are deleted, and the directory is cleaned up.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.TableExamples.CreateSimpleTableInASlide(System.String,System.String)">
+            <summary>
+            Creates a simple table in a slide of a PowerPoint presentation.
+            </summary>
+            <param name="documentDirectory">The directory where the PowerPoint presentation is located. Default is 'Presentations/Existing'.</param>
+            <param name="filename">The name of the PowerPoint file. Default is 'test.pptx'.</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TableExamples.CreateTableWithTableStylingsInASlide(System.String,System.String)">
+            <summary>
+            Creates a table with stylings applied in a slide of a PowerPoint presentation.
+            </summary>
+            <param name="documentDirectory">The directory where the PowerPoint presentation is located. Default is 'Presentations/Existing'.</param>
+            <param name="filename">The name of the PowerPoint file. Default is 'test.pptx'.</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TableExamples.CreateTableWithRowStylingsInASlide(System.String,System.String)">
+            <summary>
+            Creates a table with stylings applied to rows in a slide of a PowerPoint presentation.
+            </summary>
+            <param name="documentDirectory">The directory where the PowerPoint presentation is located. Default is 'Presentations/Existing'.</param>
+            <param name="filename">The name of the PowerPoint file. Default is 'test.pptx'.</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TableExamples.CreateTableWithCellStylingsInASlide(System.String,System.String)">
+            <summary>
+            Creates a table with stylings applied to cells in a slide of a PowerPoint presentation.
+            </summary>
+            <param name="documentDirectory">The directory where the PowerPoint presentation is located. Default is 'Presentations/Existing'.</param>
+            <param name="filename">The name of the PowerPoint file. Default is 'test.pptx'.</param>
+        </member>
+        <member name="T:Openize.Slides.Examples.TextExamples">
+            <summary>
+            Provides C# code examples for creating, reading, and modifying Text segments or shapes in a Presentation
+            using the <a href="https://www.nuget.org/packages/Openize.Slides">Openize.Slides</a> library.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Openize.Slides.Examples.TextExamples"/> class.
+            Prepares the directory 'Presentations/New' for storing or loading PowerPoint(PPT or PPTX) presentations
+            at the root of the project.
+            If the directory doesn't exist, it is created. If it already exists,
+            existing files are deleted, and the directory is cleaned up.
+            </summary>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.CreateNewTextShapeInNewSlide(System.String,System.String)">
+            <summary>
+            This method adds text segment or shape in the silde of a new PowerPoint presentation.
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.SetBackgroundColorOfTextShape(System.String,System.String)">
+            <summary>
+            This method Sets the background color of a text shape
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.SetFontFamilyofTextShape(System.String,System.String)">
+            <summary>
+            This method sets the font family of a text shape
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.SetTextColorOfTextShape(System.String,System.String)">
+            <summary>
+            This method sets the text color of text shape
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.SetFontSizeOfTextShape(System.String,System.String)">
+            <summary>
+            This method sets font size of the text
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+        <member name="M:Openize.Slides.Examples.TextExamples.AddNewTextShapeExistingSlide(System.String,System.String)">
+            <summary>
+            Add text shape to an existing slide
+            </summary>
+            <param name="documentDirectory">Path of the presentation folder</param>
+            <param name="filename">Presentation name</param>
+        </member>
+    </members>
+</doc>
